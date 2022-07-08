@@ -1,0 +1,28 @@
+.moviesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 40px;
+    padding: 40px;
+    justify-content:center;
+}
+.button{
+    background-color: #171E23;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    color: white;
+    border: 1px solid #CDCDCD;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin: 0 0 0 5%;
+}
+.button:hover {
+        box-shadow: 0 2px 60px 0 #e60073, 0 1px 60px 0 #e60073;
+        background-color: #CDCDCD; 
+        color: #171E23;
+        transform:translateY(-5px);
+}
+@media (max-width: 560px){
+    .moviesGrid{
+        grid-template-columns: 100%;
+    }
+}
